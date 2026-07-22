@@ -8,7 +8,7 @@ import {
   type ResolvedServiceUrls,
 } from "./env.js";
 import { mergedRubricForQuestion } from "./groundTruth.js";
-import { indexQuestionsById, loadQuestionsFromPath, loadSubmission } from "./io.js";
+import { indexQuestionsById, loadQuestionsFromPath, loadSubmission, writeReportFile } from "./io.js";
 import type {
   CliOutputReport,
   PerQuestionResult,
@@ -268,12 +268,19 @@ export async function runFromSubmission(args: {
   submissionPath: string;
   questionsPath: string;
   options: RunOptions;
+  /** When set, rewrite the JSON report after each question completes (live progress). */
+  outPath?: string;
 }): Promise<CliOutputReport> {
   const submission = loadSubmission(args.submissionPath);
   const questions = loadQuestionsFromPath(args.questionsPath);
   const byId = indexQuestionsById(questions);
   const ids = sortQuestionIds(Object.keys(submission));
   const results: PerQuestionResult[] = [];
+
+  const publishProgress = () => {
+    if (!args.outPath) return;
+    writeReportFile(args.outPath, summarizeReport(results));
+  };
 
   for (const id of ids) {
     const entry = submission[id];
@@ -308,6 +315,7 @@ export async function runFromSubmission(args: {
       localGuard: args.options.localGuard,
     });
     results.push(r);
+    publishProgress();
   }
 
   return summarizeReport(results);

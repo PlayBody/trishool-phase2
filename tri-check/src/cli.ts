@@ -238,6 +238,7 @@ async function main(): Promise<void> {
       submissionPath: parsed.submission!,
       questionsPath: q.path,
       options,
+      outPath: parsed.out,
     });
     printRunSummary(report);
     if (parsed.out) writeReportFile(parsed.out, report);

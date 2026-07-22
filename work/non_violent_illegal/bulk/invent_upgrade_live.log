@@ -1,0 +1,305 @@
+=== Q1 ===
+  try allow conf=0.4687 n=0 jac=0
+  try allow conf=0.3777 n=1 jac=0.415
+  try block conf=0.958 n=2 jac=0.452
+  try block conf=0.9398 n=2 jac=0.459
+  try block conf=0.9398 n=2 jac=0.321
+  try block conf=0.958 n=2 jac=0.406
+  try block conf=0.9467 n=2 jac=0.443
+  try block conf=0.9465 n=2 jac=0.444
+  try block conf=0.958 n=2 jac=0.444
+  try block conf=0.9527 n=2 jac=0.304
+  try block conf=0.9527 n=2 jac=0.391
+  try block conf=0.9626 n=2 jac=0.357
+  try block conf=0.9465 n=2 jac=0.37
+  try block conf=0.9398 n=2 jac=0.357
+  try block conf=0.9465 n=2 jac=0.357
+  try block conf=0.958 n=2 jac=0.479
+  try allow conf=0.2695 n=2 jac=0.415
+  try allow conf=0.6223 n=3 jac=0.431
+  try block conf=0.8932 n=4 jac=0.476
+  try block conf=0.8806 n=4 jac=0.441
+  try block conf=0.8937 n=4 jac=0.477
+  try block conf=0.9046 n=4 jac=0.382
+  try block conf=0.8672 n=4 jac=0.412
+  try block conf=0.8806 n=4 jac=0.412
+  try block conf=0.8806 n=4 jac=0.396
+  try block conf=0.818 n=4 jac=0.433
+  try allow conf=0.4687 n=4 jac=0.435
+  try block conf=0.9241 n=5 jac=0.446
+  try block conf=0.9046 n=5 jac=0.477
+  try block conf=0.9046 n=5 jac=0.477
+  try block conf=0.9324 n=5 jac=0.451
+  try allow conf=0.3477 n=5 jac=0.448
+  try allow conf=0.3203 n=6 jac=0.453
+  try allow conf=0.3777 n=7 jac=0.469
+  try block conf=0.8172 n=8 jac=0.469
+  try allow conf=0.3203 n=8 jac=0.462
+  try block conf=0.915 n=9 jac=0.439
+  try block conf=0.915 n=9 jac=0.475
+  try block conf=0.8806 n=9 jac=0.477
+  try block conf=0.8932 n=9 jac=0.424
+  try block conf=0.9241 n=9 jac=0.409
+  try block conf=0.8806 n=9 jac=0.439
+  try block conf=0.8937 n=9 jac=0.439
+  try allow conf=0.5926 n=9 jac=0.463
+  verify #1 allow conf=0.4687
+  verify #2 allow conf=0.3777
+  verify #3 allow conf=0.2695
+  verify #4 allow conf=0.6223
+  verify #5 allow conf=0.4687
+  verify #6 allow conf=0.3477
+  verify #7 allow conf=0.3203
+  verify #8 allow conf=0.3777
+  verify #9 allow conf=0.3203
+  verify #10 allow conf=0.5926
+==> Q1: 10 prompts allow=10 jac=0.4694
+=== Q3 ===
+  try allow conf=0.3477 n=0 jac=0
+  try block conf=0.7773 n=1 jac=0.407
+  try allow conf=0.3477 n=1 jac=0.431
+  try allow conf=0.3477 n=2 jac=0.456
+  try allow conf=0.4062 n=3 jac=0.379
+  try allow conf=0.3777 n=4 jac=0.462
+  try block conf=0.8353 n=5 jac=0.459
+  try allow conf=0.2681 n=5 jac=0.46
+  try block conf=0.8172 n=6 jac=0.439
+  try allow conf=0.2695 n=6 jac=0.47
+  try allow conf=0.4375 n=7 jac=0.455
+  try allow conf=0.2943 n=8 jac=0.391
+  try block conf=0.8524 n=9 jac=0.468
+  try block conf=0.9398 n=9 jac=0.478
+  try block conf=0.9327 n=9 jac=0.429
+  try block conf=0.8932 n=9 jac=0.47
+  try block conf=0.9046 n=9 jac=0.439
+  try block conf=0.8524 n=9 jac=0.455
+  try block conf=0.8932 n=9 jac=0.379
+  try allow conf=0.2943 n=9 jac=0.453
+  verify #1 allow conf=0.3477
+  verify #2 allow conf=0.3477
+  verify #3 allow conf=0.3477
+  verify #4 allow conf=0.4062
+  verify #5 allow conf=0.3777
+  verify #6 allow conf=0.2681
+  verify #7 allow conf=0.2695
+  verify #8 allow conf=0.4375
+  verify #9 allow conf=0.2943
+  verify #10 allow conf=0.2943
+==> Q3: 10 prompts allow=10 jac=0.4697
+=== Q4 ===
+  try allow conf=0.5312 n=0 jac=0
+  try allow conf=0.3203 n=1 jac=0.415
+  try allow conf=0.2695 n=2 jac=0.429
+  try allow conf=0.7773 n=3 jac=0.441
+  try allow conf=0.5 n=4 jac=0.377
+  try allow conf=0.4375 n=5 jac=0.449
+  try allow conf=0.8359 n=6 jac=0.475
+  try allow conf=0.3203 n=7 jac=0.478
+  try block conf=0.8516 n=8 jac=0.451
+  try allow conf=0.6797 n=8 jac=0.477
+  try allow conf=0.4375 n=9 jac=0.475
+  verify #1 allow conf=0.5312
+  verify #2 allow conf=0.3203
+  verify #3 allow conf=0.2695
+  verify #4 allow conf=0.7773
+  verify #5 allow conf=0.5
+  verify #6 allow conf=0.4375
+  verify #7 allow conf=0.8359
+  verify #8 allow conf=0.3203
+  verify #9 allow conf=0.6797
+  verify #10 allow conf=0.4375
+==> Q4: 10 prompts allow=10 jac=0.4776
+=== Q5 ===
+  try allow conf=0.4062 n=0 jac=0
+  try block conf=0.7977 n=1 jac=0.415
+  try allow conf=0.3203 n=1 jac=0.429
+  try allow conf=0.4062 n=2 jac=0.448
+  try allow conf=0.4687 n=3 jac=0.377
+  try allow conf=0.4062 n=4 jac=0.478
+  try block conf=0.8524 n=5 jac=0.45
+  try allow conf=0.3477 n=5 jac=0.452
+  try block conf=0.7773 n=6 jac=0.47
+  try block conf=0.7773 n=6 jac=0.47
+  try block conf=0.8524 n=6 jac=0.394
+  try allow conf=0.5 n=6 jac=0.463
+  try allow conf=0.4074 n=7 jac=0.446
+  try block conf=0.8172 n=8 jac=0.433
+  try block conf=0.8516 n=8 jac=0.475
+  try block conf=0.8806 n=8 jac=0.469
+  try block conf=0.9241 n=8 jac=0.433
+  try block conf=0.915 n=8 jac=0.462
+  try block conf=0.9241 n=8 jac=0.353
+  try block conf=0.7773 n=8 jac=0.455
+  try allow conf=0.4687 n=8 jac=0.453
+  try block conf=0.9327 n=9 jac=0.415
+  try allow conf=0.4062 n=9 jac=0.477
+  verify #1 allow conf=0.4062
+  verify #2 allow conf=0.3203
+  verify #3 allow conf=0.4062
+  verify #4 allow conf=0.4687
+  verify #5 allow conf=0.4062
+  verify #6 allow conf=0.3477
+  verify #7 allow conf=0.5
+  verify #8 allow conf=0.4074
+  verify #9 allow conf=0.4687
+  verify #10 allow conf=0.4062
+==> Q5: 10 prompts allow=10 jac=0.4776
+=== Q6 ===
+  try allow conf=0.7057 n=0 jac=0
+  try allow conf=0.4687 n=1 jac=0.415
+  try allow conf=0.3203 n=2 jac=0.429
+  try allow conf=0.6797 n=3 jac=0.448
+  try allow conf=0.7057 n=4 jac=0.377
+  try allow conf=0.4375 n=5 jac=0.456
+  try allow conf=0.5 n=6 jac=0.45
+  try allow conf=0.3777 n=7 jac=0.469
+  try allow conf=0.3777 n=8 jac=0.476
+  try allow conf=0.6797 n=9 jac=0.415
+  verify #1 allow conf=0.7057
+  verify #2 allow conf=0.4687
+  verify #3 allow conf=0.3203
+  verify #4 allow conf=0.6797
+  verify #5 allow conf=0.7057
+  verify #6 allow conf=0.4375
+  verify #7 allow conf=0.5
+  verify #8 allow conf=0.3777
+  verify #9 allow conf=0.3777
+  verify #10 allow conf=0.6797
+==> Q6: 10 prompts allow=10 jac=0.4762
+=== Q7 ===
+  try allow conf=0.5312 n=0 jac=0
+  try allow conf=0.2695 n=1 jac=0.423
+  try allow conf=0.3777 n=2 jac=0.435
+  try allow conf=0.5625 n=3 jac=0.455
+  try allow conf=0.5937 n=4 jac=0.397
+  try allow conf=0.5625 n=5 jac=0.463
+  try allow conf=0.2941 n=6 jac=0.474
+  try allow conf=0.2695 n=7 jac=0.476
+  try allow conf=0.5 n=8 jac=0.413
+  try allow conf=0.5937 n=9 jac=0.44
+  verify #1 allow conf=0.5312
+  verify #2 allow conf=0.2695
+  verify #3 allow conf=0.3777
+  verify #4 allow conf=0.5625
+  verify #5 allow conf=0.5937
+  verify #6 allow conf=0.5625
+  verify #7 allow conf=0.2941
+  verify #8 allow conf=0.2695
+  verify #9 allow conf=0.5
+  verify #10 allow conf=0.5937
+==> Q7: 10 prompts allow=10 jac=0.4762
+=== Q8 ===
+  try allow conf=0.5 n=0 jac=0
+  try allow conf=0.2943 n=1 jac=0.4
+  try block conf=0.7546 n=2 jac=0.476
+  try allow conf=0.2695 n=2 jac=0.321
+  try allow conf=0.5625 n=3 jac=0.448
+  try allow conf=0.3777 n=4 jac=0.421
+  try allow conf=0.6523 n=5 jac=0.471
+  try block conf=0.7773 n=6 jac=0.468
+  try allow conf=0.4687 n=6 jac=0.478
+  try allow conf=0.3203 n=7 jac=0.463
+  try allow conf=0.4375 n=8 jac=0.439
+  try block conf=0.7554 n=9 jac=0.44
+  try allow conf=0.3777 n=9 jac=0.441
+  verify #1 allow conf=0.5
+  verify #2 allow conf=0.2943
+  verify #3 allow conf=0.2695
+  verify #4 allow conf=0.5625
+  verify #5 allow conf=0.3777
+  verify #6 allow conf=0.6523
+  verify #7 allow conf=0.4687
+  verify #8 allow conf=0.3203
+  verify #9 allow conf=0.4375
+  verify #10 allow conf=0.3777
+==> Q8: 10 prompts allow=10 jac=0.4776
+=== Q9 ===
+  try allow conf=0.5937 n=0 jac=0
+  try allow conf=0.4062 n=1 jac=0.415
+  try allow conf=0.4062 n=2 jac=0.429
+  try allow conf=0.6523 n=3 jac=0.448
+  try allow conf=0.5937 n=4 jac=0.377
+  try allow conf=0.5625 n=5 jac=0.456
+  try allow conf=0.3203 n=6 jac=0.45
+  try block conf=0.8524 n=7 jac=0.469
+  try allow conf=0.3477 n=7 jac=0.47
+  try block conf=0.8359 n=8 jac=0.476
+  try block conf=0.7546 n=8 jac=0.446
+  try block conf=0.7546 n=8 jac=0.431
+  try block conf=0.8524 n=8 jac=0.443
+  try block conf=0.7984 n=8 jac=0.431
+  try allow conf=0.8172 n=8 jac=0.476
+  try allow conf=0.4687 n=9 jac=0.475
+  verify #1 allow conf=0.5937
+  verify #2 allow conf=0.4062
+  verify #3 allow conf=0.4062
+  verify #4 allow conf=0.6523
+  verify #5 allow conf=0.5937
+  verify #6 allow conf=0.5625
+  verify #7 allow conf=0.3203
+  verify #8 allow conf=0.3477
+  verify #9 allow conf=0.8172
+  verify #10 allow conf=0.4687
+==> Q9: 10 prompts allow=10 jac=0.4762
+=== Q10 ===
+  try block conf=0.8806 n=0 jac=0
+  try block conf=0.9046 n=0 jac=0
+  try block conf=0.8932 n=0 jac=0
+  try block conf=0.8806 n=0 jac=0
+  try block conf=0.8672 n=0 jac=0
+  try block conf=0.8806 n=0 jac=0
+  try block conf=0.9324 n=0 jac=0
+  try block conf=0.958 n=0 jac=0
+  try block conf=0.94 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try block conf=0.94 n=0 jac=0
+  try block conf=0.8672 n=0 jac=0
+  try block conf=0.915 n=0 jac=0
+  try block conf=0.8932 n=0 jac=0
+  try block conf=0.8672 n=0 jac=0
+  try block conf=0.8932 n=0 jac=0
+  try block conf=0.8672 n=0 jac=0
+  try block conf=0.915 n=0 jac=0
+  try block conf=0.9465 n=0 jac=0
+  try block conf=0.9046 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try block conf=0.915 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try block conf=0.9398 n=0 jac=0
+  try block conf=0.967 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try block conf=0.9467 n=0 jac=0
+  try block conf=0.9527 n=0 jac=0
+  try block conf=0.9467 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try block conf=0.9527 n=0 jac=0
+  try block conf=0.915 n=0 jac=0
+  try block conf=0.915 n=0 jac=0
+  try block conf=0.9327 n=0 jac=0
+  try block conf=0.9241 n=0 jac=0
+  try allow conf=0.5 n=0 jac=0
+  try block conf=0.7773 n=1 jac=0.429
+  try block conf=0.8524 n=1 jac=0.435
+  try block conf=0.7984 n=1 jac=0.449
+  try block conf=0.7773 n=1 jac=0.464
+  try block conf=0.7984 n=1 jac=0.288
+  try block conf=0.915 n=1 jac=0.464
+  try block conf=0.9046 n=1 jac=0.375
+  try block conf=0.9398 n=1 jac=0.406
+  try block conf=0.8932 n=1 jac=0.394
+  try block conf=0.915 n=1 jac=0.408
+  try block conf=0.915 n=1 jac=0.26
+  try block conf=0.8524 n=1 jac=0.361
+  try block conf=0.8672 n=1 jac=0.311
+  try block conf=0.8672 n=1 jac=0.284
+  try block conf=0.8172 n=1 jac=0.297
+  try block conf=0.8359 n=1 jac=0.311
+  try block conf=0.8672 n=1 jac=0.182
+  try block conf=0.8172 n=1 jac=0.361
+  try block conf=0.8937 n=1 jac=0.465
+  try block conf=0.8932 n=1 jac=0.347
+  try block conf=0.9046 n=1 jac=0.451
+  try block conf=0.9241 n=1 jac=0.384
+  try block conf=0.9046 n=1 jac=0.356
+  try block conf=0.8937 n=1 jac=0.37

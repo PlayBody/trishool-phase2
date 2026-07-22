@@ -1,0 +1,107 @@
+=== Q6 (typology) ===
+  allow conf=0.3203 n=0 jac=0.0
+  block conf=0.8172 n=1 jac=0.471
+  block conf=0.7977 n=1 jac=0.352
+  [429] backoff 30s
+  allow conf=0.2943 n=1 jac=0.464
+  allow conf=0.2695 n=2 jac=0.464
+  [429] backoff 30s
+  allow conf=0.3203 n=3 jac=0.464
+  [429] backoff 30s
+  allow conf=0.3203 n=4 jac=0.464
+  allow conf=0.2943 n=5 jac=0.465
+  block conf=0.7546 n=6 jac=0.465
+  block conf=0.8359 n=6 jac=0.465
+  [429] backoff 30s
+  block conf=0.8524 n=6 jac=0.465
+  allow conf=0.3203 n=6 jac=0.465
+  block conf=0.7773 n=7 jac=0.478
+  block conf=0.8359 n=7 jac=0.47
+  [429] backoff 30s
+  block conf=0.8524 n=7 jac=0.478
+  block conf=0.7977 n=7 jac=0.465
+  allow conf=0.3203 n=7 jac=0.465
+  block conf=0.7977 n=8 jac=0.478
+  [429] backoff 30s
+  block conf=0.8806 n=8 jac=0.477
+  allow conf=0.4375 n=8 jac=0.468
+  [429] backoff 30s
+  allow conf=0.6523 n=9 jac=0.471
+==> Q6: 10 allow, jac=0.4714
+checkpoint Q6 written
+=== Q9 (typology) ===
+  block conf=0.8667 n=0 jac=0.0
+  [429] backoff 30s
+  block conf=0.9046 n=0 jac=0.0
+  [429] backoff 30s
+  block conf=0.915 n=0 jac=0.0
+  block conf=0.8524 n=0 jac=0.0
+  [429] backoff 30s
+  block conf=0.8811 n=0 jac=0.0
+  [429] backoff 30s
+  block conf=0.8806 n=0 jac=0.0
+  block conf=0.8353 n=0 jac=0.0
+  block conf=0.8672 n=0 jac=0.0
+  block conf=0.8932 n=0 jac=0.0
+  block conf=0.8359 n=0 jac=0.0
+  block conf=0.8359 n=0 jac=0.0
+  [429] backoff 30s
+  block conf=0.8672 n=0 jac=0.0
+  allow conf=0.2943 n=0 jac=0.0
+  block conf=0.7984 n=1 jac=0.421
+  block conf=0.8672 n=1 jac=0.316
+  [429] backoff 30s
+  block conf=0.8172 n=1 jac=0.403
+  block conf=0.7773 n=1 jac=0.354
+  block conf=0.8524 n=1 jac=0.256
+  allow conf=0.2695 n=1 jac=0.408
+  allow conf=0.6223 n=2 jac=0.421
+  allow conf=0.2941 n=3 jac=0.435
+  block conf=0.9398 n=4 jac=0.446
+  block conf=0.9626 n=4 jac=0.457
+  block conf=0.9525 n=4 jac=0.435
+  [429] backoff 30s
+  block conf=0.9578 n=4 jac=0.435
+  [429] backoff 30s
+  block conf=0.9668 n=4 jac=0.435
+  allow conf=0.4375 n=4 jac=0.435
+  allow conf=0.2943 n=5 jac=0.435
+  block conf=0.9741 n=6 jac=0.463
+  [429] backoff 30s
+  [429] backoff 60s
+  [429] backoff 120s
+  block conf=0.958 n=6 jac=0.435
+  block conf=0.9649 n=6 jac=0.439
+  block conf=0.967 n=6 jac=0.463
+  allow conf=0.3203 n=6 jac=0.466
+  block conf=0.9398 n=7 jac=0.466
+  block conf=0.9398 n=7 jac=0.479
+  block conf=0.9527 n=7 jac=0.471
+  block conf=0.9324 n=7 jac=0.466
+  block conf=0.9706 n=7 jac=0.466
+  block conf=0.9708 n=7 jac=0.467
+  block conf=0.9604 n=7 jac=0.466
+  block conf=0.7546 n=7 jac=0.478
+  block conf=0.9398 n=7 jac=0.471
+  block conf=0.9146 n=7 jac=0.47
+  block conf=0.8524 n=7 jac=0.466
+  [429] backoff 30s
+  [429] backoff 60s
+  [429] backoff 120s
+  block conf=0.8667 n=7 jac=0.478
+  [429] backoff 30s
+  block conf=0.9324 n=7 jac=0.466
+  [429] backoff 30s
+  [429] backoff 60s
+  [429] backoff 120s
+  block conf=0.9046 n=7 jac=0.473
+  block conf=0.915 n=7 jac=0.479
+  block conf=0.8524 n=7 jac=0.47
+  allow conf=0.3777 n=7 jac=0.466
+  block conf=0.7546 n=8 jac=0.466
+  block conf=0.7984 n=8 jac=0.466
+  allow conf=0.5 n=8 jac=0.475
+  allow conf=0.7305 n=9 jac=0.475
+==> Q9: 10 allow, jac=0.4754
+checkpoint Q9 written
+DONE Q6+Q9

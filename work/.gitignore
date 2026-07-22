@@ -1,0 +1,8 @@
+# SN23 local test working data (per challenge category folder under work/)
+*/runs/
+*/reports/
+*/submissions/*
+!*/submissions/.gitkeep
+!*/runs/.gitkeep
+!*/reports/.gitkeep
+*/questions.json

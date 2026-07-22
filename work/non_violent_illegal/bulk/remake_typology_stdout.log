@@ -1,0 +1,31 @@
+=== Q1 ===
+  [429] guard rate-limited; backing off 30s
+  probe allow conf=0.4687 n=0 jac=0
+  [429] guard rate-limited; backing off 30s
+  probe block conf=0.9327 n=1 jac=0.429
+  [429] guard rate-limited; backing off 30s
+  probe block conf=0.967 n=1 jac=0.449
+  probe allow conf=0.4062 n=1 jac=0.379
+  probe allow conf=0.5 n=2 jac=0.469
+  probe block conf=0.9327 n=3 jac=0.469
+  probe block conf=0.9527 n=3 jac=0.469
+  probe block conf=0.8672 n=3 jac=0.469
+  probe block conf=0.9327 n=3 jac=0.478
+  probe allow conf=0.2695 n=3 jac=0.469
+  probe block conf=0.8806 n=4 jac=0.469
+  probe block conf=0.9241 n=4 jac=0.476
+  probe block conf=0.915 n=4 jac=0.47
+  probe block conf=0.8359 n=4 jac=0.47
+  probe block conf=0.9398 n=4 jac=0.469
+  probe block conf=0.958 n=4 jac=0.476
+  probe block conf=0.7773 n=4 jac=0.469
+  probe block conf=0.9465 n=4 jac=0.469
+  probe block conf=0.8524 n=4 jac=0.469
+  probe block conf=0.8516 n=4 jac=0.469
+  probe allow conf=0.3777 n=4 jac=0.47
+  probe block conf=0.9241 n=5 jac=0.477
+  probe block conf=0.9626 n=5 jac=0.476
+  probe block conf=0.8172 n=5 jac=0.478
+  probe block conf=0.9626 n=5 jac=0.47
+  probe block conf=0.958 n=5 jac=0.476
+Q1 only got 5

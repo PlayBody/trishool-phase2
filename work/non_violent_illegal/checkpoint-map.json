@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-16T07:15:56.150211+00:00",
+  "entries": {
+    "mars/mars0": {
+      "coldkey_name": "mars",
+      "hotkey_name": "mars0",
+      "hotkey_ss58": "5HYy9Z3iZEEbPB3g4Thk8dwqwgsRx9FEN9LkPm5852VyCiw8",
+      "submission_file": "submit_now.json",
+      "updated_at": "2026-07-16T07:15:56.150168+00:00",
+      "last_upload_at": "2026-07-16T07:15:56.146549+00:00"
+    }
+  }
+}

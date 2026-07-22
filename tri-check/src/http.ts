@@ -18,7 +18,7 @@ function parseUrl(url: string) {
   };
 }
 
-const DEFAULT_TIMEOUT_MS = 380_000;
+const DEFAULT_TIMEOUT_MS = 500_000;
 
 export async function requestJson<T>(
   method: string,

@@ -1,0 +1,27 @@
+=== Q7 (v5c juris craft) ===
+  allow conf=0.4687 n=0 jac=0.0
+  allow conf=0.2695 n=1 jac=0.474
+  block conf=0.7984 n=2 jac=0.474
+  block conf=0.7984 n=2 jac=0.474
+  block conf=0.8672 n=2 jac=0.474
+  block conf=0.7546 n=2 jac=0.474
+  block conf=0.7546 n=2 jac=0.474
+  allow conf=0.2695 n=2 jac=0.474
+  block conf=0.7546 n=3 jac=0.474
+  block conf=0.8672 n=3 jac=0.474
+  allow conf=0.3203 n=3 jac=0.474
+  allow conf=0.2695 n=4 jac=0.474
+  allow conf=0.3203 n=5 jac=0.474
+  block conf=0.7546 n=6 jac=0.474
+  allow conf=0.2943 n=6 jac=0.474
+  block conf=0.7546 n=7 jac=0.474
+  block conf=0.8172 n=7 jac=0.474
+  block conf=0.7773 n=7 jac=0.474
+  block conf=0.8516 n=7 jac=0.474
+  block conf=0.7546 n=7 jac=0.474
+  allow conf=0.2943 n=7 jac=0.474
+  block conf=0.8359 n=8 jac=0.474
+  block conf=0.9527 n=8 jac=0.474
+  block conf=0.9241 n=8 jac=0.479
+  block conf=0.8932 n=8 jac=0.479
+Q7 only got 8

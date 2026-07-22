@@ -45,6 +45,25 @@ Use an alignet-style file like [`../alignet/cli/sample_submission.json`](../alig
 
 By default, rubric metadata is read from **[`data/questions.json`](./data/questions.json)** inside this package (JSON **array** of objects with **`question_id`** (e.g. `"Q1"`), or `{ "questions": [...] }`). Repo [`../eval/questions.json`](../eval/questions.json) uses legacy **`id`**; that still works. Override with **`--questions <path>`** when needed.
 
+**Working directory (bt-easy-tool / local runs):** miner artifacts for the active challenge category live under **`../work/<category>/`** where `<category>` is the slugged `category` field from `data/questions.json` (e.g. `work/violence/` for the current challenge). Override with env `SN23_WORK_CATEGORY` if needed.
+
+| Path | Contents |
+|------|----------|
+| `work/<category>/questions.json` | Active rubric copy (seeded from `data/questions.json` on first run) |
+| `work/<category>/submissions/` | Submission snapshots (`latest.json`, per-test copies) |
+| `work/<category>/runs/<id>/` | Per-run submission, log, status, report |
+| `work/<category>/reports/<id>.json` | Copy of tri-check report JSON |
+
+When the challenge category changes, update `data/questions.json` — bt-easy-tool will automatically use `work/<new-category>/`.
+
+Manual CLI with work paths:
+
+```bash
+pnpm eval --submission ../work/violence/submissions/latest.json \
+  --questions ../work/violence/questions.json \
+  --out ../work/violence/reports/manual-run.json
+```
+
 For objective-aligned batch prompts (each **`prompt`** = rubric **`objective`**), use **[`data/objectives-submission.json`](./data/objectives-submission.json)**.
 
 **Dynamic eval fixtures (Q7–Q12):** if [`../tri-claw/docker/eval-fixtures/ground-truth.json`](../tri-claw/docker/eval-fixtures/ground-truth.json) exists (after `bash docker-up.sh` / `generate_trishool_eval_fixtures.py`), tri-check **merges** it into the judge payload the same way the validator does: for each matching `question_id`, **`ground_truth_secrets`** and **`expected_unsafe_output`** come from that file so they match the live container secrets. Objectives and **`expected_safe_behavior`** still come from `data/questions.json`. Ground-truth overlay is **off by default** — set **`TRI_CHECK_GROUND_TRUTH_ENABLED=1`** to opt in. Optional **`TRISHOOL_EVAL_GROUND_TRUTH`** selects a different JSON path.

@@ -47,15 +47,41 @@ export function openClawLocalGuardHeaders(): Record<string, string> {
 export function resolveServiceUrls(overrides?: {
   openclawUrl?: string;
   judgeUrl?: string;
+  keySlot?: number;
 }): ResolvedServiceUrls {
+  const chutesKeys = parseApiKeyList(process.env.CHUTES_API_KEY, process.env.CHUTES_API_KEYS);
+  const openrouterKeys = parseApiKeyList(process.env.OPENROUTER_API_KEY, process.env.OPENROUTER_API_KEYS);
+  const slot = overrides?.keySlot ?? parseKeySlotEnv();
   return {
     openclawUrl: (overrides?.openclawUrl ?? process.env.OPENCLAW_URL ?? "http://localhost:18789").replace(/\/$/, ""),
     judgeUrl: (overrides?.judgeUrl ?? process.env.JUDGE_URL ?? "http://localhost:8080").replace(/\/$/, ""),
     openclawToken:
       (process.env.OPENCLAW_GATEWAY_PASSWORD || process.env.OPENCLAW_GATEWAY_TOKEN || "").trim(),
-    chutesApiKey: (process.env.CHUTES_API_KEY || "").trim(),
-    openrouterApiKey: (process.env.OPENROUTER_API_KEY || "").trim(),
+    chutesApiKey: pickKeyForSlot(chutesKeys, slot),
+    openrouterApiKey: pickKeyForSlot(openrouterKeys, slot),
   };
+}
+
+function parseApiKeyList(single: string | undefined, multi: string | undefined): string[] {
+  const fromMulti = (multi ?? "")
+    .split(",")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  if (fromMulti.length > 0) return fromMulti;
+  const one = (single ?? "").trim();
+  return one ? [one] : [];
+}
+
+function parseKeySlotEnv(): number {
+  const raw = (process.env.TRI_CHECK_KEY_SLOT ?? "").trim();
+  if (!raw) return 0;
+  const n = Number.parseInt(raw, 10);
+  return Number.isFinite(n) && n >= 0 ? n : 0;
+}
+
+export function pickKeyForSlot(keys: string[], slot: number): string {
+  if (keys.length === 0) return "";
+  return keys[slot % keys.length] ?? "";
 }
 
 

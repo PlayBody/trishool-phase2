@@ -3,10 +3,8 @@ import time
 from typing import Any
 import argparse
 
-import bittensor as bt
-from bittensor.wallet import Wallet
-from bittensor.keyfiles import Keypair, KeyfileError
 import typer
+from bittensor_wallet import Keypair, Wallet
 from rich.console import Console
 
 console = Console(log_time_format="[%Y-%m-%d %H:%M:%S]")
@@ -20,15 +18,13 @@ CHALLENGE_TTL_SECONDS = 120
 
 
 def get_wallet(name: str, hotkey: str) -> Wallet:
-    if bt is None:  # pragma: no cover
-        raise RuntimeError("bittensor is not installed")
     return Wallet(name=name, hotkey=hotkey)
 
 
 def load_wallet(wallet_name: str, wallet_hotkey: str) -> Wallet:
     try:
         wallet = get_wallet(wallet_name, wallet_hotkey)
-    except KeyfileError as exc:
+    except FileNotFoundError as exc:
         console.log(
             "[bold red]Missing hotkey files[/] "
             f"for wallet '{wallet_name}/{wallet_hotkey}'. Import or create the wallet before retrying."
